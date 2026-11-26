@@ -1,0 +1,78 @@
+# Dependencies
+node_modules/
+
+# Compiled output
+dist/
+build/
+tmp/
+out-tsc/
+bazel-out/
+*.tsbuildinfo
+
+# Angular
+web/.angular/cache
+.sass-cache/
+web/connect.lock
+web/libpeerconnection.log
+web/testem.log
+web/typings
+__screenshots__/
+
+# Prisma generated client
+api/src/generated/prisma
+
+# Tests
+coverage/
+.nyc_output/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Temp and runtime
+.temp
+.tmp
+pids
+*.pid
+*.seed
+*.pid.lock
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.history/
+
+# VS Code (keep shared settings)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/mcp.json
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Local AI/agent tool folders
+.claude/
+.agents/
+.windsurf/
+api/AGENTS.md
+api/skills-lock.json
