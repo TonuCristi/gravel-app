@@ -53,7 +53,7 @@ export class AuthController {
   @Get('me')
   @UseGuards(AuthGuard)
   me(@CurrentUser() user: User) {
-    return user;
+    return { user };
   }
 
   @Post('logout')
