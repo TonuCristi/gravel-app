@@ -57,13 +57,14 @@ export class AuthController {
   }
 
   @Post('logout')
-  @UseGuards(AuthGuard)
   @HttpCode(204)
   logout(@Res({ passthrough: true }) res: unknown) {
+    const { maxAge, ...clearCookieOptions } = cookieOptions;
+
     this.adapterHost.httpAdapter.clearCookie(
       res,
       ACCESS_TOKEN_COOKIE,
-      cookieOptions,
+      clearCookieOptions,
     );
   }
 
